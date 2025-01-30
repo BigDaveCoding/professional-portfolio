@@ -16,9 +16,9 @@
 
     <script defer src="./script.js"></script>
 </head>
-<body class="" style="font-family: 'Kantumruy Pro';">
+<body class="max-w-[1280px] w-full mx-auto" style="font-family: 'Kantumruy Pro';">
 
-    <header class="fixed w-full mx-auto left-0 right-0 px-3 border-b-2 pt-1 pb-2 z-50 bg-white">  
+    <header class="fixed w-full mx-auto left-0 right-0 px-3 border-b-2 pt-1 pb-2 z-50 bg-white max-w-[1280px]">  
         <div class="grid grid-cols-[3fr_1fr] items-center">
             <div>
                 <h1 class="text-4xl">David Smith</h1>
@@ -28,7 +28,7 @@
         </div>
     </header>  
 
-    <div class="nav_menu_small_screen fixed mt-19.5 w-full z-40 bg-white mx-auto left-0 right-0 hidden">
+    <div class="nav_menu_small_screen fixed mt-19.5 w-full z-40 bg-white mx-auto left-0 right-0 hidden max-w-[1280px]">
         <a href="">
             <div class="border-b-2 text-right pr-7 py-2">
                 <span>Link</span>
@@ -155,9 +155,11 @@
         <h3 class="text-5xl py-6 bg-gray-50 font-medium text-center">PROJECTS</h3>
 
         <div class="projects_grid grid grid-cols-1 gap-10 justify-items-center pt-6
-        md:grid-cols-2">
+        md:grid-cols-2
+        lg:grid-cols-3 lg:gap-0">
 
-            <div class="project_one max-w-90 bg-neutral-800 rounded-lg mx-2 px-4 py-2 sm:justify-self-start">
+            <div class="project_one max-w-90 bg-neutral-800 rounded-lg mx-2 px-4 py-2 sm:justify-self-start
+            lg:mx-1">
                 <div class="trapezoid border-b-[15px] border-b-neutral-800 border-l-[15px] border-l-transparent border-r-[15px] border-r-transparent absolute w-[100px] -translate-y-5">
                 </div>
 
@@ -185,7 +187,8 @@
                 </div>
             </div>
 
-            <div class="project_two max-w-90 bg-neutral-800 rounded-lg mx-2 px-4 py-2">
+            <div class="project_two max-w-90 bg-neutral-800 rounded-lg mx-2 px-4 py-2
+            lg:mx-1">
                 <div class="trapezoid border-b-[15px] border-b-neutral-800 border-l-[15px] border-l-transparent border-r-[15px] border-r-transparent absolute w-[100px] -translate-y-5">
                 </div>
 
@@ -213,7 +216,10 @@
                 </div>
             </div>
 
-            <div class="project_three max-w-90 bg-neutral-800 rounded-lg mx-2 px-4 py-2 sm:justify-self-end md:col-span-2 md:justify-self-center">
+            <div class="project_three max-w-90 bg-neutral-800 rounded-lg mx-2 px-4 py-2
+             sm:justify-self-end
+              md:col-span-2 md:justify-self-center
+              lg:col-span-1 lg:mx-1">
                 <div class="trapezoid border-b-[15px] border-b-neutral-800 border-l-[15px] border-l-transparent border-r-[15px] border-r-transparent absolute w-[100px] -translate-y-5">
                 </div>
 
@@ -246,7 +252,7 @@
     </section>
 
     <section class="contact_section">
-        <h2 class="text-left text-5xl font-medium px-2 py-6">Get In Touch.</h2>
+        <h2 class="text-left text-5xl font-medium px-2 py-6 lg:text-center">Get In Touch.</h2>
 
         <div class="contact_bio px-3">
             <p>I’m always excited to find opportunities that help me grow, try new things, and meet people with different perspectives. It’s all about learning, connecting, and having fun along the way.
@@ -255,8 +261,9 @@
                 Got an idea, some advice, a question, or just want to say hi? My inbox is always open, and I’d love to hear from you!</p>
         </div>
 
-        <div class="socials">
-            <div class="grid grid-cols-4 justify-center items-center text-center py-6">
+        <div class="socials lg:justify-items-center">
+            <div class="grid grid-cols-4 justify-center items-center text-center py-6
+            lg:w-8/12 ">
                 <div>
                     <i class="text-3xl fa-brands fa-github"></i>
                     <p class="text-xs font-light">GitHub</p>

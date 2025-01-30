@@ -881,6 +881,12 @@
   .max-w-96 {
     max-width: calc(var(--spacing) * 96);
   }
+  .max-w-\[1024px\] {
+    max-width: 1024px;
+  }
+  .max-w-\[1280px\] {
+    max-width: 1280px;
+  }
   .max-w-none {
     max-width: none;
   }
@@ -2637,6 +2643,51 @@
   .md\:justify-self-center {
     @media (width >= 48rem) {
       justify-self: center;
+    }
+  }
+  .lg\:col-span-1 {
+    @media (width >= 64rem) {
+      grid-column: span 1 / span 1;
+    }
+  }
+  .lg\:mx-1 {
+    @media (width >= 64rem) {
+      margin-inline: calc(var(--spacing) * 1);
+    }
+  }
+  .lg\:w-8\/12 {
+    @media (width >= 64rem) {
+      width: calc(8/12 * 100%);
+    }
+  }
+  .lg\:grid-cols-3 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .lg\:justify-items-center {
+    @media (width >= 64rem) {
+      justify-items: center;
+    }
+  }
+  .lg\:gap-0 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:gap-1 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 1);
+    }
+  }
+  .lg\:gap-5 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 5);
+    }
+  }
+  .lg\:text-center {
+    @media (width >= 64rem) {
+      text-align: center;
     }
   }
 }
