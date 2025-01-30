@@ -2576,6 +2576,36 @@
       grid-template-columns: 1fr 5fr;
     }
   }
+  .sm\:justify-self-end {
+    @media (width >= 40rem) {
+      justify-self: flex-end;
+    }
+  }
+  .sm\:justify-self-start {
+    @media (width >= 40rem) {
+      justify-self: flex-start;
+    }
+  }
+  .md\:col-span-2 {
+    @media (width >= 48rem) {
+      grid-column: span 2 / span 2;
+    }
+  }
+  .md\:grid-cols-2 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .md\:grid-cols-\[2fr_5fr\] {
+    @media (width >= 48rem) {
+      grid-template-columns: 2fr 5fr;
+    }
+  }
+  .md\:justify-self-center {
+    @media (width >= 48rem) {
+      justify-self: center;
+    }
+  }
 }
 @keyframes spin {
   to {
