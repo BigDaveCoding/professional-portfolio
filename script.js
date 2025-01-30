@@ -19,11 +19,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
         const tl = gsap.timeline({repeat: -1})
 
         tl.to(cursor, {
-            opcacty: 1,
+            opacity: 1,
             duration: 0.1
         })
         tl.to(cursor, {
-            duartion: 0.2
+            duration: 0.2
         })
         tl.to(cursor, {
             opacity: 0,
@@ -65,6 +65,54 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     animateSubtitle()
     animateTextCursor(text_cursor)
+
+    
+    const project_one_title = document.querySelector('.project_one_title')
+    const project_one_desc = document.querySelector('.project_one_description')
+    const project_one_skills = document.querySelector('.project_one_skills')
+
+    const project_two_title = document.querySelector('.project_two_title')
+    const project_two_desc = document.querySelector('.project_two_description')
+    const project_two_skills = document.querySelector('.project_two_skills')
+
+    const project_three_title = document.querySelector('.project_three_title')
+    const project_three_desc = document.querySelector('.project_three_description')
+    const project_three_skills = document.querySelector('.project_three_skills')
+
+
+    fetch('./json/info.json')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+
+            project_one_title.textContent = data.project_one.name
+            project_one_desc.textContent = data.project_one.about
+            data.project_one.skills.forEach(skill => {
+                const span = document.createElement("span")
+                span.classList.add('pr-3')
+                span.textContent = '#' + skill
+                project_one_skills.appendChild(span)
+            })
+
+            project_two_title.textContent = data.project_two.name
+            project_two_desc.textContent = data.project_two.about
+            data.project_two.skills.forEach(skill => {
+                const span = document.createElement("span")
+                span.classList.add('pr-3')
+                span.textContent = '#' + skill
+                project_two_skills.appendChild(span)
+            })
+
+            project_three_title.textContent = data.project_three.name
+            project_three_desc.textContent = data.project_three.about
+            data.project_three.skills.forEach(skill => {
+                const span = document.createElement("span")
+                span.classList.add('pr-3')
+                span.textContent = '#' + skill
+                project_three_skills.appendChild(span)
+            })
+
+        })
     
 });
 
