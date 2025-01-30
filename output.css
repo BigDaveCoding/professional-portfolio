@@ -584,11 +584,23 @@
   .end-2 {
     inset-inline-end: calc(var(--spacing) * 2);
   }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
+  }
   .isolate {
     isolation: isolate;
   }
   .isolation-auto {
     isolation: auto;
+  }
+  .z-0 {
+    z-index: 0;
+  }
+  .z-50 {
+    z-index: 50;
   }
   .z-auto {
     z-index: auto;
@@ -695,6 +707,9 @@
       max-width: 96rem !important;
     }
   }
+  .mx-auto {
+    margin-inline: auto;
+  }
   .box-border {
     box-sizing: border-box;
   }
@@ -799,6 +814,18 @@
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
+  }
+  .w-8\/12 {
+    width: calc(8/12 * 100%);
+  }
+  .w-9\/12 {
+    width: calc(9/12 * 100%);
+  }
+  .w-10\/12 {
+    width: calc(10/12 * 100%);
+  }
+  .w-full {
+    width: 100%;
   }
   .w-screen {
     width: 100vw;
@@ -1051,6 +1078,9 @@
   }
   .auto-rows-min {
     grid-auto-rows: min-content;
+  }
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
   .grid-cols-\[3fr_1fr\] {
     grid-template-columns: 3fr 1fr;
@@ -1441,6 +1471,9 @@
   .bg-red-500\/\[50\%\] {
     background-color: color-mix(in oklab, var(--color-red-500) 50%, transparent);
   }
+  .bg-white {
+    background-color: var(--color-white);
+  }
   .-bg-conic {
     --tw-gradient-position: in oklab,;
     background-image: conic-gradient(var(--tw-gradient-stops));
@@ -1613,14 +1646,23 @@
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
+  }
+  .pt-6 {
+    padding-top: calc(var(--spacing) * 6);
   }
   .pr-4 {
     padding-right: calc(var(--spacing) * 4);
   }
   .pb-2 {
     padding-bottom: calc(var(--spacing) * 2);
+  }
+  .pb-6 {
+    padding-bottom: calc(var(--spacing) * 6);
   }
   .text-center {
     text-align: center;

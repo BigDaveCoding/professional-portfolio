@@ -9,37 +9,57 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 
     <script defer src="./script.js"></script>
 </head>
-<body class="p-2" style="font-family: 'Share Tech Mono';">
+<body class="p-2" style="font-family: 'Montserrat';">
     <header class="border-b-2 pb-2">  
         <div class="grid grid-cols-[3fr_1fr] items-center">
             <h1 class="text-4xl">David Smith</h1>
-            <i class="nav_menu_button text-center text-2xl fa-solid fa-bars"></i>
+            <i class="nav_menu_button text-right text-2xl pr-4 fa-solid fa-bars"></i>
         </div>
     </header>  
-    <div class="nav_menu_small_screen">
-        <div class="border-b-2 text-right pr-4 py-2">
-            <i class="text-center text-2xl fa-solid fa-bars"></i>
-            <a><span>link</span></a>
-        </div>
-        <div class="border-b-2 text-right pr-4 py-2">
-            <i class="text-center text-2xl fa-solid fa-bars"></i>
-            <a><span>link</span></a>
-        </div>
-        <div class="border-b-2 text-right pr-4 py-2">
-            <i class="text-center text-2xl fa-solid fa-bars"></i>
-            <a><span>link</span></a>
-        </div>
-        <div class="border-b-2 text-right pr-4 py-2">
-            <i class="text-center text-2xl fa-solid fa-bars"></i>
-            <a><span>link</span></a>
-        </div>
+    <div class="nav_menu_small_screen absolute w-full z-50 bg-white mx-auto left-0 right-0 px-2 hidden">
+        <a href="">
+            <div class="border-b-2 text-right pr-4 py-2">
+                <span>Link</span>
+                <i class="text-center text-2xl fa-solid fa-bars"></i>
+            </div>
+        </a>
+
+        <a href="">
+            <div class="border-b-2 text-right pr-4 py-2">
+                <span>Link</span>
+                <i class="text-center text-2xl fa-solid fa-bars"></i>
+            </div>
+        </a>
+
+        <a href="">
+            <div class="border-b-2 text-right pr-4 py-2">
+                <span>Link</span>
+                <i class="text-center text-2xl fa-solid fa-bars"></i>
+            </div>
+        </a>
+
+        <a href="">
+            <div class="border-b-2 text-right pr-4 py-2">
+                <span>Link</span>
+                <i class="text-center text-2xl fa-solid fa-bars"></i>
+            </div>
+        </a>
+
     </div>  
+
+    <section class="hero_section pt-6">
+        <div class="grid grid-cols-1 justify-items-center pb-6">
+            <img src="./images/David_and_Pablo_Sand_Dunes.jpg" alt="david and his dog pablo on top of a sand dune" class="grayscale w-9/12">
+        </div>
+        <h1 class="text-5xl text-center p-2">Hi, I'm David</h1>
+        <p class="text-center text-xl">I am a Software Developer <i class="fa-regular fa-floppy-disk"></i></p>
+    </section>
 </body>
 </html>
