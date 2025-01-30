@@ -16,10 +16,13 @@
 
     <script defer src="./script.js"></script>
 </head>
-<body class="p-2" style="font-family: 'Montserrat';">
+<body class="p-3" style="font-family: 'Montserrat';">
     <header class="border-b-2 pb-2">  
         <div class="grid grid-cols-[3fr_1fr] items-center">
-            <h1 class="text-4xl">David Smith</h1>
+            <div>
+                <h1 class="text-4xl">David Smith</h1>
+                <p class="font-light px-1">Software Developer</p>
+            </div>
             <i class="nav_menu_button text-right text-2xl pr-4 fa-solid fa-bars"></i>
         </div>
     </header>  
@@ -58,8 +61,16 @@
         <div class="grid grid-cols-1 justify-items-center pb-6">
             <img src="./images/David_and_Pablo_Sand_Dunes.jpg" alt="david and his dog pablo on top of a sand dune" class="grayscale w-9/12">
         </div>
-        <h1 class="text-5xl text-center p-2">Hi, I'm David</h1>
-        <p class="text-center text-xl">I am a Software Developer <i class="fa-regular fa-floppy-disk"></i></p>
+        <div class="grid grid-cols-1">
+            <div>
+                <h1 class="text-5xl  py-2">Hi, I'm David</h1>
+                <p class="px-1 text-xl">I am a Software Developer <i class="fa-regular fa-floppy-disk"></i></p>
+            </div>
+            <p class="py-6">My journey as a developer began with creating video games in Unity, where I first discovered my passion for coding.
+                 I then deepened my knowledge by completing The Odin Project's foundations course and studying web development,
+                  computer science & data analytics on Codecademy. Fast forward to today, I am currently enrolled at iO Academy,
+                   studying software engineering with the goal of becoming a web developer.</p>
+        </div>
     </section>
 </body>
 </html>
