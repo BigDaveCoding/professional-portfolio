@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const text_cursor = document.querySelector('.text_cursor')
 
     const nav_links = document.querySelectorAll('.nav_link')
-    console.log(nav_links)
 
     nav_menu_button.addEventListener('click', () => {
         nav_menu_small_screen.classList.toggle('hidden')
@@ -134,6 +133,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
             })
 
         })
+
+    const interest_section = document.querySelector('.interest_section')
+    console.log(interest_section)
+
+    gsap.to(interest_section, {
+        opacity: 1,
+        duration: 2,
+        scrollTrigger: {
+            trigger: interest_section,
+            start: 'top 80%',
+            end: 'bottom top',
+            markers: true
+
+        }
+    })
     
 });
 

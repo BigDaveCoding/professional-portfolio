@@ -2094,6 +2094,12 @@
   .scheme-only-light {
     color-scheme: only light;
   }
+  .opacity-0 {
+    opacity: 0%;
+  }
+  .opacity-10 {
+    opacity: 10%;
+  }
   .mix-blend-plus-darker {
     mix-blend-mode: plus-darker;
   }
