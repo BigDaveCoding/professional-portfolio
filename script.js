@@ -144,8 +144,62 @@ document.addEventListener("DOMContentLoaded", (event) => {
             trigger: interest_section,
             start: 'top 80%',
             end: 'bottom top',
-            markers: true
+            // markers: true
 
+        }
+    })
+
+    const web_dev_interest = document.querySelector('.web_dev_interest')
+    const web_design_interest = document.querySelector('.web_design_interest')
+    const data_analytics_interest = document.querySelector('.data_analytics_interest')
+    const game_dev_interest = document.querySelector('.game_dev_interest')
+    const projects_section = document.querySelector('.projects_section')
+
+    gsap.to(web_dev_interest, {
+        scrollTrigger: {
+            trigger: web_dev_interest,
+            start: 'top 78',
+            endTrigger: game_dev_interest,
+            end: 'top 258',
+            pin: true,
+            pinSpacing: false,
+            markers: true
+        }
+    })
+
+    gsap.to(web_design_interest, {
+        scrollTrigger: {
+            trigger: web_design_interest,
+            start: 'top 138',
+            endTrigger: game_dev_interest,
+            end: 'top 258',
+            pin: true,
+            pinSpacing: false,
+            markers: true
+        }
+    })
+
+    gsap.to(data_analytics_interest, {
+        scrollTrigger: {
+            trigger: data_analytics_interest,
+            start: 'top 198',
+            endTrigger: game_dev_interest,
+            end: 'top 258',
+            pin: true,
+            pinSpacing: false,
+            markers: true
+        }
+    })
+
+    gsap.to(game_dev_interest, {
+        scrollTrigger: {
+            trigger: game_dev_interest,
+            start: 'top 258',
+            endTrigger: game_dev_interest,
+            end: 'top 258',
+            pin: true,
+            pinSpacing: false,
+            markers: true
         }
     })
     
