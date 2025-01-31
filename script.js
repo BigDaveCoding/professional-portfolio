@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             end: 'top 258',
             pin: true,
             pinSpacing: false,
-            markers: true
+            // markers: true
         }
     })
 
@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             end: 'top 258',
             pin: true,
             pinSpacing: false,
-            markers: true
+            // markers: true
         }
     })
 
@@ -187,7 +187,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             end: 'top 258',
             pin: true,
             pinSpacing: false,
-            markers: true
+            // markers: true
         }
     })
 
@@ -199,7 +199,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             end: 'top 258',
             pin: true,
             pinSpacing: false,
-            markers: true
+            // markers: true
         }
     })
     
