@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,9 +16,9 @@
 
     <script defer src="./script.js"></script>
 </head>
-<body class="max-w-[1280px] w-full mx-auto" style="font-family: 'Kantumruy Pro';">
+<body class="max-w-[1280px] w-full mx-auto scroll-smooth" style="font-family: 'Kantumruy Pro';">
 
-    <header class="fixed w-full mx-auto left-0 right-0 px-3 border-b-2 pt-1 pb-2 z-50 bg-white max-w-[1280px]">  
+    <header  class="fixed w-full mx-auto left-0 right-0 px-3 border-b-2 pt-1 pb-2 z-50 bg-white max-w-[1280px]">  
         <div class="grid grid-cols-[3fr_1fr] items-center">
             <div>
                 <h1 class="text-4xl">David Smith</h1>
@@ -29,37 +29,37 @@
     </header>  
 
     <div class="nav_menu_small_screen fixed mt-19.5 w-full z-40 bg-white mx-auto left-0 right-0 hidden max-w-[1280px]">
-        <a href="">
-            <div class="border-b-2 text-right pr-7 py-2">
-                <span>Link</span>
-                <i class="text-center text-2xl fa-solid fa-bars"></i>
+        <a class="nav_link" href="#home">
+            <div class="border-b-2 text-right pr-7 py-4">
+                <span>Home</span>
+                <i class="pl-4 fa-solid fa-house"></i>
             </div>
         </a>
 
-        <a href="">
-            <div class="border-b-2 text-right pr-7 py-2">
-                <span>Link</span>
-                <i class="text-center text-2xl fa-solid fa-bars"></i>
+        <a class="nav_link" href="#interests">
+            <div class="border-b-2 text-right pr-7 py-4">
+                <span>Interests</span>
+                <i class="pl-4 fa-solid fa-user"></i>
             </div>
         </a>
 
-        <a href="">
-            <div class="border-b-2 text-right pr-7 py-2">
-                <span>Link</span>
-                <i class="text-center text-2xl fa-solid fa-bars"></i>
+        <a class="nav_link" href="#projects">
+            <div class="border-b-2 text-right pr-7 py-4">
+                <span>Projects</span>
+                <i class="pl-4 fa-solid fa-folder-open"></i>
             </div>
         </a>
 
-        <a href="">
-            <div class="border-b-2 text-right pr-7 py-2">
-                <span>Link</span>
-                <i class="text-center text-2xl fa-solid fa-bars"></i>
+        <a class="nav_link" href="#contact">
+            <div class="border-b-2 text-right pr-7 py-4">
+                <span>Contact</span>
+                <i class="pl-4 fa-solid fa-envelope"></i>
             </div>
         </a>
 
     </div>  
 
-    <section class="hero_section pt-19.5">
+    <section id="home" class="hero_section pt-19.5">
         <div class="grid grid-cols-1 justify-items-center py-6 bg-gray-100 md:grid-cols-[1fr_2fr_1fr]">
             <img src="./images/pablo_behind_head.JPG" alt="pablo the lurcher" class="hidden grayscale w-9/12 md:max-w-[200px] md:block md:self-center" />
             <img src="./images/David_and_Pablo_Sand_Dunes.jpg" alt="david and his dog pablo on top of a sand dune" class="grayscale w-9/12 sm:max-w-[350px]" />
@@ -81,7 +81,7 @@
         </div>
     </section>
 
-    <section class="Interest_section">
+    <section id="interests" class="Interest_section">
 
         <h2 class="text-5xl font-medium text-center py-2 bg-gray-50 lg:py-10">AREAS I'M EXPLORING</h2>
 
@@ -155,7 +155,7 @@
 
     </section>
 
-    <section class="projects_section">
+    <section id="projects" class="projects_section">
 
         <h3 class="text-5xl py-6 bg-gray-50 font-medium text-center lg:py-10">PROJECTS</h3>
 
@@ -253,7 +253,7 @@
 
     </section>
 
-    <section class="contact_section">
+    <section id="contact" class="contact_section">
         <h2 class="text-left text-5xl font-medium px-2 py-6 lg:text-center">Get In Touch.</h2>
 
         <div class="contact_bio px-3">

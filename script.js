@@ -10,8 +10,29 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const hero_subtitle = document.querySelector('.hero_subtitle')
     const text_cursor = document.querySelector('.text_cursor')
 
+    const nav_links = document.querySelectorAll('.nav_link')
+    console.log(nav_links)
+
     nav_menu_button.addEventListener('click', () => {
         nav_menu_small_screen.classList.toggle('hidden')
+    })
+
+    nav_links.forEach(link => {
+        link.addEventListener('click', () => {
+            nav_menu_small_screen.classList.add('hidden')
+        })
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); 
+    
+            const targetId = this.getAttribute('href').substring(1); 
+            const targetSection = document.getElementById(targetId);
+    
+            // Scroll to the section with an offset for the fixed header
+            window.scrollTo({
+                top: targetSection.offsetTop - document.querySelector('header').offsetHeight, // Subtract header height
+                behavior: 'smooth'
+            });
+        });
     })
 
     function animateTextCursor(cursor) {
