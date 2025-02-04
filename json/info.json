@@ -15,10 +15,10 @@
         "skills" : ["Web-Dev", "Responsive Design", "GSAP", "Client Communication"]
     },
     "project_three": {
-        "name" : "project name",
-        "about" : "Here is a random description of the project. It allows you to do this and that and it works without any complications because I'm amazing at coding... right?",
+        "name" : "Email Automation",
+        "about" : "This Python script automates email organization by moving emails from a specified sender to a chosen folder on an IMAP server. It handles authentication securely, processes emails in batches, and ensures efficient cleanup.",
         "image" : "./images/placeholder.png",
         "alt" : "",
-        "skills" : ["skill 1", "skill 2", "skill 3"]
+        "skills" : [ "Python", "IMAP", "Email Parsing", "Error Handling", "Secure Authentication", "Batch Processing", "Folder Management"]
     }
 }
